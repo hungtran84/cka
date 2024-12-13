@@ -11,7 +11,8 @@
 - D) A physical server for hosting applications  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+**Answer: B**
+  
 Explanation: Containers package code and dependencies together to ensure applications run consistently across environments.
 </details>
 
