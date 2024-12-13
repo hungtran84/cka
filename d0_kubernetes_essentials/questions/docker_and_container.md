@@ -12,7 +12,7 @@
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: Containers package code and dependencies together to ensure applications run consistently across environments._
+Explanation: Containers package code and dependencies together to ensure applications run consistently across environments.
 </details>
 
 ### Question 2: How do containers differ from virtual machines (VMs)?
@@ -23,7 +23,7 @@ _Explanation: Containers package code and dependencies together to ensure applic
 <details>
 <summary>Reveal Answer</summary>
 **Answer: C**  
-_Explanation: Containers share the host OS kernel, making them lightweight compared to VMs, which run a separate guest OS._
+Explanation: Containers share the host OS kernel, making them lightweight compared to VMs, which run a separate guest OS.
 </details>
 
 ### Question 3: Which of the following is an advantage of using containers over virtual machines?
@@ -34,7 +34,7 @@ _Explanation: Containers share the host OS kernel, making them lightweight compa
 <details>
 <summary>Reveal Answer</summary>
 **Answer: A**  
-_Explanation: Containers are lightweight and can start in seconds, whereas VMs require booting a full OS._
+Explanation: Containers are lightweight and can start in seconds, whereas VMs require booting a full OS.
 </details>
 
 ### Question 4: What is a key characteristic of containers?
@@ -45,7 +45,7 @@ _Explanation: Containers are lightweight and can start in seconds, whereas VMs r
 <details>
 <summary>Reveal Answer</summary>
 **Answer: D**  
-_Explanation: Containers encapsulate applications and their dependencies to ensure portability and consistency._
+Explanation: Containers encapsulate applications and their dependencies to ensure portability and consistency.
 </details>
 
 ### Question 5: Which statement about containers is FALSE?
@@ -56,7 +56,7 @@ _Explanation: Containers encapsulate applications and their dependencies to ensu
 <details>
 <summary>Reveal Answer</summary>
 **Answer: C**  
-_Explanation: Containers do not require a separate guest OS; they share the host OS kernel._
+Explanation: Containers do not require a separate guest OS; they share the host OS kernel.
 </details>
 
 ### Question 6: Which of the following is NOT a characteristic of virtual machines?
@@ -67,7 +67,7 @@ _Explanation: Containers do not require a separate guest OS; they share the host
 <details>
 <summary>Reveal Answer</summary>
 **Answer: C**  
-_Explanation: VMs run their own guest OS, unlike containers, which share the host OS kernel._
+Explanation: VMs run their own guest OS, unlike containers, which share the host OS kernel.
 </details>
 
 ### Question 7: Which of these provides the primary isolation mechanism in containers?
@@ -78,7 +78,7 @@ _Explanation: VMs run their own guest OS, unlike containers, which share the hos
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: Containers provide isolation through OS-level virtualization, using the same host kernel._
+Explanation: Containers provide isolation through OS-level virtualization, using the same host kernel.
 </details>
 
 ### Question 8: What is the primary purpose of container orchestration tools like Kubernetes?
@@ -89,7 +89,7 @@ _Explanation: Containers provide isolation through OS-level virtualization, usin
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: Kubernetes and other orchestration tools help automate the deployment, scaling, and management of containerized applications._
+Explanation: Kubernetes and other orchestration tools help automate the deployment, scaling, and management of containerized applications.
 </details>
 
 ### Question 9: Which is an example of an orchestration tool used to manage containers?
@@ -100,7 +100,7 @@ _Explanation: Kubernetes and other orchestration tools help automate the deploym
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: Kubernetes is a popular orchestration tool used for managing containerized applications._
+Explanation: Kubernetes is a popular orchestration tool used for managing containerized applications.
 </details>
 
 ### Question 10: Which of the following best describes a container image?
@@ -111,7 +111,7 @@ _Explanation: Kubernetes is a popular orchestration tool used for managing conta
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: A container image contains everything needed to run an application: code, libraries, dependencies, and runtime._
+Explanation: A container image contains everything needed to run an application: code, libraries, dependencies, and runtime.
 </details>
 
 ---
@@ -126,7 +126,7 @@ _Explanation: A container image contains everything needed to run an application
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: A `Dockerfile` specifies instructions for building a Docker image, including application code and dependencies._
+Explanation: A `Dockerfile` specifies instructions for building a Docker image, including application code and dependencies.
 </details>
 
 ### Question 12: Which command is used to build a Docker image?
@@ -137,7 +137,7 @@ _Explanation: A `Dockerfile` specifies instructions for building a Docker image,
 <details>
 <summary>Reveal Answer</summary>
 **Answer: C**  
-_Explanation: The `docker build` command creates a Docker image from a `Dockerfile`._
+Explanation: The `docker build` command creates a Docker image from a `Dockerfile`.
 </details>
 
 ### Question 13: What is the purpose of the `docker run` command?
@@ -148,7 +148,7 @@ _Explanation: The `docker build` command creates a Docker image from a `Dockerfi
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: The `docker run` command creates and starts a container from a Docker image._
+Explanation: The `docker run` command creates and starts a container from a Docker image.
 </details>
 
 ### Question 14: Which command lists all running Docker containers?
@@ -159,7 +159,7 @@ _Explanation: The `docker run` command creates and starts a container from a Doc
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: The `docker ps` command lists all running containers._
+Explanation: The `docker ps` command lists all running containers.
 </details>
 
 ### Question 15: How do you remove an unused Docker image?
@@ -170,7 +170,7 @@ _Explanation: The `docker ps` command lists all running containers._
 <details>
 <summary>Reveal Answer</summary>
 **Answer: D**  
-_Explanation: The `docker rmi` command removes unused Docker images._
+Explanation: The `docker rmi` command removes unused Docker images.
 </details>
 
 ### Question 16: What does the `docker push` command do?
@@ -181,7 +181,7 @@ _Explanation: The `docker rmi` command removes unused Docker images._
 <details>
 <summary>Reveal Answer</summary>
 **Answer: C**  
-_Explanation: The `docker push` command uploads a local image to a container registry like Docker Hub._
+Explanation: The `docker push` command uploads a local image to a container registry like Docker Hub.
 </details>
 
 ### Question 17: What does the `docker logs` command do?
@@ -192,7 +192,7 @@ _Explanation: The `docker push` command uploads a local image to a container reg
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: The `docker logs` command is used to fetch logs from a running container._
+Explanation: The `docker logs` command is used to fetch logs from a running container.
 </details>
 
 ### Question 18: What is the main purpose of the `docker-compose` tool?
@@ -203,7 +203,7 @@ _Explanation: The `docker logs` command is used to fetch logs from a running con
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: Docker Compose helps define and manage multi-container applications._
+Explanation: Docker Compose helps define and manage multi-container applications.
 </details>
 
 ### Question 19: Which file is used to define services in Docker Compose?
@@ -214,7 +214,7 @@ _Explanation: Docker Compose helps define and manage multi-container application
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: The `docker-compose.yaml` file is used to define the services, networks, and volumes for Docker Compose._
+Explanation: The `docker-compose.yaml` file is used to define the services, networks, and volumes for Docker Compose.
 </details>
 
 ### Question 20: Which command starts the services defined in a `docker-compose.yaml` file?
@@ -225,7 +225,7 @@ _Explanation: The `docker-compose.yaml` file is used to define the services, net
 <details>
 <summary>Reveal Answer</summary>
 **Answer: C**  
-_Explanation: The `docker-compose up` command starts all the services defined in the Compose file._
+Explanation: The `docker-compose up` command starts all the services defined in the Compose file.
 </details>
 
 ---
@@ -240,7 +240,7 @@ _Explanation: The `docker-compose up` command starts all the services defined in
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: `docker-compose down` stops and removes all containers, networks, and volumes created by Compose._
+Explanation: `docker-compose down` stops and removes all containers, networks, and volumes created by Compose.
 </details>
 
 ### Question 22: What is the primary purpose of `docker-compose.yml` file?
@@ -251,7 +251,7 @@ _Explanation: `docker-compose down` stops and removes all containers, networks, 
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: The `docker-compose.yml` file defines and configures multiple services that are part of a Docker application._
+Explanation: The `docker-compose.yml` file defines and configures multiple services that are part of a Docker application.
 </details>
 
 ### Question 23: What does the `docker-compose build` command do?
@@ -262,7 +262,7 @@ _Explanation: The `docker-compose.yml` file defines and configures multiple serv
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: The `docker-compose build` command builds images for the services as defined in the Compose file._
+Explanation: The `docker-compose build` command builds images for the services as defined in the Compose file.
 </details>
 
 ### Question 24: Which of these files is required for Docker Compose to run?
@@ -273,7 +273,7 @@ _Explanation: The `docker-compose build` command builds images for the services 
 <details>
 <summary>Reveal Answer</summary>
 **Answer: B**  
-_Explanation: `docker-compose.yaml` is the configuration file required for Docker Compose to define services._
+Explanation: `docker-compose.yaml` is the configuration file required for Docker Compose to define services.
 </details>
 
 
@@ -285,5 +285,5 @@ _Explanation: `docker-compose.yaml` is the configuration file required for Docke
 <details>
 <summary>Reveal Answer</summary>
 **Answer: A**  
-_Explanation: The `-d` flag runs the services in the background (detached mode)._
+Explanation: The `-d` flag runs the services in the background (detached mode).
 </details>
