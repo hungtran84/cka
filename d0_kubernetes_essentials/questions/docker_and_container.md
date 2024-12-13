@@ -11,7 +11,7 @@
 - D) A physical server for hosting applications  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**
+Answer: B
   
 Explanation: Containers package code and dependencies together to ensure applications run consistently across environments.
 </details>
@@ -23,7 +23,8 @@ Explanation: Containers package code and dependencies together to ensure applica
 - D) Containers can only run on Linux systems  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: C**  
+Answer: C
+
 Explanation: Containers share the host OS kernel, making them lightweight compared to VMs, which run a separate guest OS.
 </details>
 
@@ -34,7 +35,8 @@ Explanation: Containers share the host OS kernel, making them lightweight compar
 - D) Support for multiple hypervisors  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: A**  
+Answer: A 
+
 Explanation: Containers are lightweight and can start in seconds, whereas VMs require booting a full OS.
 </details>
 
@@ -45,7 +47,7 @@ Explanation: Containers are lightweight and can start in seconds, whereas VMs re
 - D) Containers package applications and dependencies together  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: D**  
+Answer: D 
 Explanation: Containers encapsulate applications and their dependencies to ensure portability and consistency.
 </details>
 
@@ -56,7 +58,8 @@ Explanation: Containers encapsulate applications and their dependencies to ensur
 - D) Containers are ideal for microservices architectures  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: C**  
+Answer: C 
+
 Explanation: Containers do not require a separate guest OS; they share the host OS kernel.
 </details>
 
@@ -67,7 +70,8 @@ Explanation: Containers do not require a separate guest OS; they share the host 
 - D) VMs consume more resources compared to containers  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: C**  
+Answer: C 
+
 Explanation: VMs run their own guest OS, unlike containers, which share the host OS kernel.
 </details>
 
@@ -78,7 +82,7 @@ Explanation: VMs run their own guest OS, unlike containers, which share the host
 - D) Separate virtual networks  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
 Explanation: Containers provide isolation through OS-level virtualization, using the same host kernel.
 </details>
 
@@ -89,7 +93,8 @@ Explanation: Containers provide isolation through OS-level virtualization, using
 - D) To monitor and manage server hardware  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: Kubernetes and other orchestration tools help automate the deployment, scaling, and management of containerized applications.
 </details>
 
@@ -100,7 +105,8 @@ Explanation: Kubernetes and other orchestration tools help automate the deployme
 - D) Docker Hub  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: Kubernetes is a popular orchestration tool used for managing containerized applications.
 </details>
 
@@ -111,7 +117,8 @@ Explanation: Kubernetes is a popular orchestration tool used for managing contai
 - D) A repository where container logs are stored  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: A container image contains everything needed to run an application: code, libraries, dependencies, and runtime.
 </details>
 
@@ -126,7 +133,8 @@ Explanation: A container image contains everything needed to run an application:
 - D) To monitor running containers  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: A `Dockerfile` specifies instructions for building a Docker image, including application code and dependencies.
 </details>
 
@@ -137,7 +145,8 @@ Explanation: A `Dockerfile` specifies instructions for building a Docker image, 
 - D) `docker start`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: C**  
+Answer: C 
+
 Explanation: The `docker build` command creates a Docker image from a `Dockerfile`.
 </details>
 
@@ -148,7 +157,8 @@ Explanation: The `docker build` command creates a Docker image from a `Dockerfil
 - D) To build an image from a `Dockerfile`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: The `docker run` command creates and starts a container from a Docker image.
 </details>
 
@@ -159,7 +169,8 @@ Explanation: The `docker run` command creates and starts a container from a Dock
 - D) `docker inspect`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: The `docker ps` command lists all running containers.
 </details>
 
@@ -170,7 +181,8 @@ Explanation: The `docker ps` command lists all running containers.
 - D) `docker rmi <image>`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: D**  
+Answer: D 
+
 Explanation: The `docker rmi` command removes unused Docker images.
 </details>
 
@@ -181,7 +193,8 @@ Explanation: The `docker rmi` command removes unused Docker images.
 - D) Export a container’s logs  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: C**  
+Answer: C 
+
 Explanation: The `docker push` command uploads a local image to a container registry like Docker Hub.
 </details>
 
@@ -192,7 +205,8 @@ Explanation: The `docker push` command uploads a local image to a container regi
 - D) Push a container to Docker Hub  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: The `docker logs` command is used to fetch logs from a running container.
 </details>
 
@@ -203,7 +217,8 @@ Explanation: The `docker logs` command is used to fetch logs from a running cont
 - D) To start a single container interactively  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: Docker Compose helps define and manage multi-container applications.
 </details>
 
@@ -214,7 +229,8 @@ Explanation: Docker Compose helps define and manage multi-container applications
 - D) `services.yaml`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: The `docker-compose.yaml` file is used to define the services, networks, and volumes for Docker Compose.
 </details>
 
@@ -225,7 +241,8 @@ Explanation: The `docker-compose.yaml` file is used to define the services, netw
 - D) `docker-compose start`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: C**  
+Answer: C 
+
 Explanation: The `docker-compose up` command starts all the services defined in the Compose file.
 </details>
 
@@ -240,7 +257,8 @@ Explanation: The `docker-compose up` command starts all the services defined in 
 - D) Restarts the containers without changing configuration  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: `docker-compose down` stops and removes all containers, networks, and volumes created by Compose.
 </details>
 
@@ -251,7 +269,8 @@ Explanation: `docker-compose down` stops and removes all containers, networks, a
 - D) To run a single container interactively  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: The `docker-compose.yml` file defines and configures multiple services that are part of a Docker application.
 </details>
 
@@ -262,7 +281,8 @@ Explanation: The `docker-compose.yml` file defines and configures multiple servi
 - D) Pushes the images to a Docker registry  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
+
 Explanation: The `docker-compose build` command builds images for the services as defined in the Compose file.
 </details>
 
@@ -273,7 +293,7 @@ Explanation: The `docker-compose build` command builds images for the services a
 - D) `Dockerfile.json`  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: B**  
+Answer: B 
 Explanation: `docker-compose.yaml` is the configuration file required for Docker Compose to define services.
 </details>
 
@@ -285,6 +305,7 @@ Explanation: `docker-compose.yaml` is the configuration file required for Docker
 - D) It removes all stopped containers  
 <details>
 <summary>Reveal Answer</summary>
-**Answer: A**  
+Answer: A 
+
 Explanation: The `-d` flag runs the services in the background (detached mode).
 </details>
