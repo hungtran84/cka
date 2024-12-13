@@ -13,8 +13,8 @@
 - Clone the course reposistory
 
 ```
-git clone https://github.com/hungtran84/k8s-ckad.git
-Cloning into 'k8s-ckad'...
+git clone https://github.com/hungtran84/cka.git
+Cloning into 'cka'...
 remote: Enumerating objects: 27, done.
 remote: Counting objects: 100% (27/27), done.
 remote: Compressing objects: 100% (19/19), done.
@@ -26,7 +26,7 @@ Resolving deltas: 100% (5/5), done.
 - Deploy the application using Docker compose
 
 ```
-cd k8s-ckad/d0-container-k8s-fundamental/2-docker-compose/
+cd k8s-ckad/d0_kubernetes_essentials/2-docker-compos/
 docker-compose up -d
 ```
 
