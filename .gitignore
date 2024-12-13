@@ -1,0 +1,36 @@
+# macOS system files
+.DS_Store
+*.swp
+.AppleDouble
+.LSOverride
+
+# macOS Finder resource forks
+Icon?
+
+# Python (including subfolders)
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/*.pyo
+**/*.pyd
+**/.env
+**/*.env
+**/.venv
+**/venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Docker
+*.env
+Dockerfile.*
+docker-compose.override.yml
+.dockerignore
+
+# Markdown
+*.md~
+
+# General backup files
+*~
+*.bak
+*.tmp
+*.old

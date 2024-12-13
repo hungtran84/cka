@@ -26,7 +26,7 @@ Resolving deltas: 100% (5/5), done.
 - Deploy the application using Docker compose
 
 ```
-cd k8s-ckad/d0_kubernetes_essentials/2-docker-compos/
+cd cka/d0_kubernetes_essentials/2-docker-compose/
 docker-compose up -d
 ```
 
