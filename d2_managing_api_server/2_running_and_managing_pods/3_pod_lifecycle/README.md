@@ -34,7 +34,7 @@ spec:
 Apply the configuration:
 
 ```bash
-kubectl apply -f pod-always.yaml
+kubectl apply -f pod-restart-always.yaml
 ```
 
 **Example output:**
