@@ -35,7 +35,7 @@ Replace the version with the desired upgrade version:
 ```bash
 sudo apt-mark unhold kubeadm
 sudo apt-get update
-sudo apt-get install -y kubeadm=1.28.1-00
+sudo apt-get install -y kubeadm=1.30.6-00
 sudo apt-mark hold kubeadm
 ```
 
@@ -46,7 +46,7 @@ kubectl drain cp1 --ignore-daemonsets
 
 #### 2.3 Run Upgrade Plan and Pre-Flight Checks
 ```bash
-sudo kubeadm upgrade plan v1.28.1
+sudo kubeadm upgrade plan v1.30.6
 ```
 This command will:
 - Highlight required manual updates (e.g., `kubelet`).
@@ -59,7 +59,7 @@ kubeadm config images pull
 
 #### 2.5 Apply the Upgrade
 ```bash
-sudo kubeadm upgrade apply v1.28.1
+sudo kubeadm upgrade apply v1.30.6
 ```
 
 #### 2.6 Uncordon the Control Plane Node
@@ -71,7 +71,7 @@ kubectl uncordon cp1
 ```bash
 sudo apt-mark unhold kubelet kubectl 
 sudo apt-get update
-sudo apt-get install -y kubelet=1.28.1-00 kubectl=1.28.1-00
+sudo apt-get install -y kubelet=1.30.6-00 kubectl=1.30.6-00
 sudo apt-mark hold kubelet kubectl
 ```
 
@@ -101,7 +101,7 @@ gcloud compute ssh node1
 ```bash
 sudo apt-mark unhold kubeadm 
 sudo apt-get update
-sudo apt-get install -y kubeadm=1.28.1-00
+sudo apt-get install -y kubeadm=1.30.6-00
 sudo apt-mark hold kubeadm
 ```
 
@@ -114,7 +114,7 @@ sudo kubeadm upgrade node
 ```bash
 sudo apt-mark unhold kubelet kubectl 
 sudo apt-get update
-sudo apt-get install -y kubelet=1.28.1-00 kubectl=1.28.1-00
+sudo apt-get install -y kubelet=1.30.6-00 kubectl=1.30.6-00
 sudo apt-mark hold kubelet kubectl
 ```
 
