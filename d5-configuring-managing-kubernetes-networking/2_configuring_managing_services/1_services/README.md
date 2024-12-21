@@ -46,7 +46,7 @@
    ```bash
    PODIP=$(kubectl get endpoints hello-world-clusterip -o jsonpath='{ .subsets[].addresses[].ip }')
    echo $PODIP
-   curl http://$PODIP:8080
+   kubectl run bb --image=nginx:alpine --restart=Never -it --rm -- curl http://$PODIP:8080
    ```
 
 7. **Scale the Deployment and Observe Load Balancing**  
