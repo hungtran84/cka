@@ -1,4 +1,3 @@
-```markdown
 # Lab: Exposing and Accessing Applications with Services on Kubernetes
 
 ## Objectives
