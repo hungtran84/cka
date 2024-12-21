@@ -97,7 +97,7 @@
 4. **Move old data and replace with restored data:**
    ```bash
    sudo mv /var/lib/etcd /var/lib/etcd.OLD
-   sudo mv ./default.etcd /var/lib/etcd
+   sudo mv /var/lib/dat-backup.db /var/lib/etcd
    ```
 5. **Restart the static pod:**
    ```bash
