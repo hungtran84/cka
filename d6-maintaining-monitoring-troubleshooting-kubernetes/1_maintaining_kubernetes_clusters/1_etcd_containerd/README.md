@@ -6,6 +6,9 @@
 3. Restore etcd data from a backup.
 4. Validate the restoration process and clean up resources.
 
+## Prerequisites
+- To work with `etcd`, we need to access to the `cp1` node.
+
 ## Steps
 
 ### Step 1: Inspect etcd Configuration
