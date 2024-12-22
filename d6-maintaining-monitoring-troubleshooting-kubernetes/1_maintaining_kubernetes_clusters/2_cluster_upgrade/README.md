@@ -35,7 +35,7 @@ Replace the version with the desired upgrade version:
 ```bash
 sudo apt-mark unhold kubeadm
 sudo apt-get update
-sudo apt-get install -y kubeadm=1.30.6-00
+sudo apt-get install -y kubeadm=1.30.6-1.1
 sudo apt-mark hold kubeadm
 ```
 
@@ -71,7 +71,7 @@ kubectl uncordon cp1
 ```bash
 sudo apt-mark unhold kubelet kubectl 
 sudo apt-get update
-sudo apt-get install -y kubelet=1.30.6-00 kubectl=1.30.6-00
+sudo apt-get install -y kubelet=1.30.6-1.1 kubectl=1.30.6-1.1
 sudo apt-mark hold kubelet kubectl
 ```
 
@@ -101,7 +101,7 @@ gcloud compute ssh node1
 ```bash
 sudo apt-mark unhold kubeadm 
 sudo apt-get update
-sudo apt-get install -y kubeadm=1.30.6-00
+sudo apt-get install -y kubeadm=1.30.6-1.1
 sudo apt-mark hold kubeadm
 ```
 
@@ -114,7 +114,7 @@ sudo kubeadm upgrade node
 ```bash
 sudo apt-mark unhold kubelet kubectl 
 sudo apt-get update
-sudo apt-get install -y kubelet=1.30.6-00 kubectl=1.30.6-00
+sudo apt-get install -y kubelet=1.30.6-1.1 kubectl=1.30.6-1.1
 sudo apt-mark hold kubelet kubectl
 ```
 
