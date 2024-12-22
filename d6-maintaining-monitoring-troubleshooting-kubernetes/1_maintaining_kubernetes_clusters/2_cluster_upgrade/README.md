@@ -77,6 +77,7 @@ sudo apt-mark hold kubelet kubectl
 
 #### 2.8 Verify Upgrade Status
 ```bash
+sudo systemctl restart kubelet
 kubectl version -oyaml
 kubectl get nodes
 ```
