@@ -54,7 +54,7 @@ This command will:
 
 #### 2.4 Prepull Required Images
 ```bash
-kubeadm config images pull
+sudo kubeadm config images pull
 ```
 
 #### 2.5 Apply the Upgrade
