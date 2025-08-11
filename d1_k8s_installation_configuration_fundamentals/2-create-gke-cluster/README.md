@@ -41,9 +41,12 @@ gcloud compute regions list
 ```
 Look for the IN_USE_ADDRESSES metric and ensure the limit minus usage is at least 3 in your desired region. If your selected region doesn’t have enough available IPs, choose another region with sufficient resources.
 
+### 5. **Create a Firewall rule**
+```sh
+gcloud compute firewall-rules create nodeports --allow tcp:30000-40000
+```
 
-
-### 4. **Create a GKE Cluster**
+### 6. **Create a GKE Cluster**
 
 Create a low-cost GKE cluster using the following command. This command creates a zonal cluster with a single node pool, a small machine type, and a maximum of 3 nodes to minimize costs. Adjust the name as necessary:
 
@@ -60,7 +63,7 @@ gcloud container clusters create test-cluster \
   --disk-size 50
 ```
 
-### 5. **Get Credentials for the Cluster**
+### 7. **Get Credentials for the Cluster**
 
 After the cluster is created, retrieve the credentials to access it:
 
@@ -68,7 +71,7 @@ After the cluster is created, retrieve the credentials to access it:
 gcloud container clusters get-credentials test-cluster --zone asia-southeast2-c
 ```
 
-### 6. **Verify Cluster Access**
+### 8. **Verify Cluster Access**
 
 To verify that you can access the cluster, run:
 
@@ -78,7 +81,7 @@ kubectl get nodes
 
 You should see the node(s) in your cluster listed.
 
-### 7. **Deploy a Sample Application**
+### 9. **Deploy a Sample Application**
 
 To test your cluster, deploy a sample application (e.g., NGINX) using the following command:
 
@@ -92,7 +95,7 @@ Then expose the deployment to access it:
 kubectl expose deployment nginx --type NodePort --port 80
 ```
 
-### 8. **Get the External IP Address**
+### 10. **Get the External IP Address**
 
 To access the application, get the external IP address of the node:
 
@@ -100,7 +103,7 @@ To access the application, get the external IP address of the node:
 kubectl get service nginx
 ```
 
-### 9. **Cleanup Resources**
+### 11. **Cleanup Resources**
 
 Once you’re done with your experiments, delete the GKE cluster to avoid incurring charges:
 
