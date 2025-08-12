@@ -150,7 +150,7 @@ Finally, create a pod with the `Never` restart policy to observe its behavior wh
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-world-pod-never
+  name: hello-world-never-pod
 spec:
   containers:
   - name: hello-world
@@ -165,11 +165,11 @@ kubectl apply -f pod-restart-never.yaml
 ```
 
 ### Step 9: Test the Never Restart Policy
-Simulate a failure in the `hello-world-pod-never` by killing the main process. Observe that the pod enters an Error state without restarting.
+Simulate a failure in the `hello-world-never-pod` by killing the main process. Observe that the pod enters an Error state without restarting.
 
 ```bash
-kubectl exec -it hello-world-pod-never -- /usr/bin/killall hello-app
-kubectl get pod hello-world-pod-never
+kubectl exec -it hello-world-never-pod -- /usr/bin/killall hello-app
+kubectl get pod hello-world-never-pod
 ```
 
 The pod status should remain `Error`, as the restart policy prevents any restart.
@@ -178,7 +178,7 @@ The pod status should remain `Error`, as the restart policy prevents any restart
 Delete all pods and jobs created during the lab:
 
 ```bash
-kubectl delete pod hello-world-always-pod hello-world-failure-pod hello-world-success-pod hello-world-pod-never
+kubectl delete pod hello-world-always-pod hello-world-failure-pod hello-world-success-pod hello-world-never-pod
 ```
 
 Stop the watch command:
