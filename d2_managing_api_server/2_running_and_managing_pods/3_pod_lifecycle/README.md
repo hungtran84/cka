@@ -18,7 +18,7 @@ kubectl get events --watch &
 Using the manifest file `pod-always.yaml`, create a pod with the default restart policy (`Always`). This will allow us to observe how Kubernetes manages a pod when the main container fails and restarts automatically.
 
 ```yaml
-# pod-always.yaml
+# pod-restart-always.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -113,14 +113,14 @@ Check the status of the pod to see how they completed:
 kubectl get pod
 ```
 
-You should see both jobs listed, with the `hello-world-pod-success` job completing successfully and the `hello-world-pod-failure` job failing.
+You should see both jobs listed, with the `hello-world-success-pod` job completing successfully and the `hello-world-failure-pod` job failing.
 
 ### Step 7: Describe the Pod for Exit Codes
 Use `kubectl describe` to check the details of each job, including their completion status and exit codes.
 
 ```bash
-kubectl describe pod hello-world-pod-success
-kubectl describe pod hello-world-pod-failure
+kubectl describe pod hello-world-success-pod
+kubectl describe pod hello-world-failure-pod
 ```
 
 
@@ -146,11 +146,11 @@ During this process, the RESTARTS count for the pod will increment each time the
 Finally, create a pod with the `Never` restart policy to observe its behavior when the container fails.
 
 ```yaml
-# pod-never.yaml
+# pod-restart-never.yaml
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-world-never-pod
+  name: hello-world-pod-never
 spec:
   containers:
   - name: hello-world
@@ -161,15 +161,15 @@ spec:
 Apply the configuration:
 
 ```bash
-kubectl apply -f pod-never.yaml
+kubectl apply -f pod-restart-never.yaml
 ```
 
 ### Step 9: Test the Never Restart Policy
-Simulate a failure in the `hello-world-never-pod` by killing the main process. Observe that the pod enters an Error state without restarting.
+Simulate a failure in the `hello-world-pod-never` by killing the main process. Observe that the pod enters an Error state without restarting.
 
 ```bash
-kubectl exec -it hello-world-never-pod -- /usr/bin/killall hello-app
-kubectl get pod hello-world-never-pod
+kubectl exec -it hello-world-pod-never -- /usr/bin/killall hello-app
+kubectl get pod hello-world-pod-never
 ```
 
 The pod status should remain `Error`, as the restart policy prevents any restart.
@@ -178,7 +178,7 @@ The pod status should remain `Error`, as the restart policy prevents any restart
 Delete all pods and jobs created during the lab:
 
 ```bash
-kubectl delete pod hello-world-always-pod hello-world-failure-pod hello-world-success-pod hello-world-never-pod
+kubectl delete pod hello-world-always-pod hello-world-failure-pod hello-world-success-pod hello-world-pod-never
 ```
 
 Stop the watch command:
