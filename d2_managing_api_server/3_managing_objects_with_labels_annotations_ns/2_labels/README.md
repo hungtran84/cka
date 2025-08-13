@@ -447,7 +447,6 @@ Scheduling is a deeper topic in Kubernetes, but here we will focus on how labels
 4. **Create Pods with Node Selectors:**
    Next, create three pods, with two using `nodeSelector` and one without:
    ```yaml
-   cat PodsToNodes.yaml
    apiVersion: v1
    kind: Pod
    metadata:
