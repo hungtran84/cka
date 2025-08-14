@@ -18,7 +18,7 @@ spec:
         ports:
         - containerPort: 8080
       tolerations:
-      - key: "dedicated"
+      - key: "key"
         operator: "Equal"
-        value: "web"
+        value: "MyTaint"
         effect: "NoSchedule"
